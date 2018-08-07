@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Garant Global Logistic</title>
+  <link rel="stylesheet" href="/src/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+  <!--<meta name="viewport" content="width=1300, initial-scale=1.0">-->
+
+  <script async src="//st.yagla.ru/js/y.c.js?h=579a243e39f8c6a94d6c775c7ecfbfe8"></script>
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="logo">
+      <div class="img-wrapper logo__img"><img src="/src/img/logo-header.png" alt="logo"></div>
+      <p class="logo__slogan">Логистический оператор и&nbsp;таможенный брокер в одном лице</p>
+    </div>
+    <div class="container">
+      <div class="header-right">
+        <div class="call">
+          <div class="number">
+            <a href="tel:+78005119912" class="other-num">8 800 511 99 12</a>
+            <a href="#" class="call-btn" data-popup="recall">Звонок по России<span class="text-upper">бесплатный</span></a>
+            <div class="call-buttom-popup hidden" id="recall" data-popup-window="1">
+              <form data-order="order-1" id="application" action="application.php" method="POST" name=" application ">
+                <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                <div class="pop-inf text-change">и мы перезвоним Вам</div>
+                <p class="label_sndok label-change" style="display: none">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-input-wrapper">
+                  <button class="label_to" style="display: none">ЗАКАЗАТЬ ЗВОНОК</button>
+                  <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                  <input name="telephone" required="" type="Tel" id="applicationTelephone" class="form-input popup mask-phone" placeholder="Телефон:">
+                  <input name="from" type="hidden" value="Бесплатный звонок">
+                </div>
+                <button id="f1" class="button popup-btn applicationButton" type="submit" form="application">ЗАКАЗАТЬ ЗВОНОК</button>
+                <button id="polit8" class="box-change"><input type="checkbox" id="polit44" /> Согласен с политикой конфиденциальности и на обработку персональных данных</button>
+                <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-right__economy header-content">
+          <div class="review-inf">поможем сэкономить до 50%</div>
+          <div class="review-inf-service">Доставка и таможенное оформление из Китая и стран Юго-Восточной Азии</div>
+        </div>
+      </div>
+      <div class="flex-arround ic-list">
+        <div class="ic-list__item ic-list__item_guarantee">Гарантия неизменной<br>стоимости и отсутствия<br> &laquo;сюрпризов&raquo; на таможне</div>
+        <div class="ic-list__item ic-list__item_manager">Без посредников<br>собственный штат<br>декларантов и логистов</div>
+        <div class="ic-list__item ic-list__item_border">Учитываем климат в<br>таможенных органах и на<br>границе</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="block block-advantages" id="raschet">
+    <div class="container">
+      <div class="block-advantages__advantages-container">
+        <div class="block-advantages-info block-advantages-info_carry">
+          Все виды грузов <br>от<span class="text-highlighted"> 30кг</span>
+        </div>
+        <div class="block-advantages-info block-advantages-info_dialog">
+          Не задаем лишних вопросов<br><span class="text-highlighted">только по существу</span>
+        </div>
+        <div class="block-advantages-info block-advantages-info_timer">
+          Перезвоним в течении<br><span class="text-highlighted">30 секунд</span> (в рабочее время)
+        </div>
+
+        <div class="block-advantages-info block-advantages-info_cargo">
+          Рассрочка платежа<br><span class="text-highlighted">до момента доставки груза</span>
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="form-cost" class="registration-form" method="post">
+          <p class="label_sndok" style="display: none; margin-top: 300px">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+          <div class="text-header form-header text-change">ОСТАВЬТЕ ЗАЯВКУ</div>
+          <div class="form-hint text-change">на бесплатный расчет стоимости и в течении 1 дня <br> узнайте сколько вы сэкономите, поручив нам <br> доставку вашего груза</div>
+          <input name="name" required="" id="applicationName" placeholder="Введите ваше имя" type="text" class="form-input">
+          <input name="phone" type="Tel" id="applicationTelephone" placeholder="Введите ваш телефон" type="tel" class="form-input mask-phone">
+          <input name="email" id="applicationEmail" placeholder="Введите ваш е-маил" type="email" class="form-input">
+          <input id="applicationTXT1" name="punkt1" placeholder="Пункт отправления" type="text" class="form-input">
+          <input name="punkt2" id="applicationTXT2" placeholder="Пункт назначения" type="text" class="form-input">
+          <input name="cargo" id="applicationTXT3 soflow" placeholder="Вес" type="text" class="form-input">
+          <input name="vob" id="applicationTXT4 soflow2" placeholder="Обьем" type="text" class="form-input">
+          <input name="nametov" id="applicationTXT5" placeholder="Наименование товара" type="text" class="form-input">
+          <label id="polits" class="box-change"><input type="checkbox" id="polit"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+          <input class="account-btn" type="submit" value="ПОЛУЧИТЬ РАСЧЕТ СТОИМОСТИ" id="submitform" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-countries">
+    <div class="container">
+      <h2>Доставляем из следующих стран</h2>
+      <div class="flex-between block-countries__container">
+        <div class="block-countries__country block-countries__country_china">
+          <p class="block-countries__country-name">Китай</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_usa">
+          <p class="block-countries__country-name">США</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_korea">
+          <p class="block-countries__country-name">Южная Корея</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_japan">
+          <p class="block-countries__country-name">Япония</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_malaysia">
+          <p class="block-countries__country-name">Малайзия</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_sing">
+          <p class="block-countries__country-name">Сингапур</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_indonesia">
+          <p class="block-countries__country-name">Индонезия</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_thai">
+          <p class="block-countries__country-name">Тайланд</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_phil">
+          <p class="block-countries__country-name">Филиппины</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+        <div class="block-countries__country block-countries__country_australia">
+          <p class="block-countries__country-name">Австралия</p>
+          <p class="block-countries__weight">от <span>30</span> кг</p>
+          <p class="block-countries__timeframe">от <span>3</span> дней</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-features">
+    <div class="container">
+      <h2 class="features-header">Как мы работаем над <span class="text-highlighted">ВАШИМ ЗАКАЗОМ?</span></h2>
+
+      <div class="info-block-wrapper">
+        <div class="features-info features-info_phone">Мы перезвоним вам в&nbsp;течении <span class="text-accent">30 секунд</span> для уточнения параметров</div>
+        <div class="features-info features-info_email">В течении <span class="text-accent">1 дня</span> мы произведём расчет и вышлем на указанную вами электронную почту Коммерческое Предложение </div>
+      </div>
+      <div class="info-border">В коммерческое предложение включены:</div>
+      <ul class="features-lists">
+        <li class="features-li features-li_cost">Стоимость доставки груза</li>
+        <li class="features-li features-li_time">Сроки доставки&nbsp;груза</li>
+        <li class="features-li features-li_border">Стоимость таможенного оформления</li>
+        <li class="features-li features-li_docs">Стоимость получения разрешительных документов (в случае, если они необходимы)</li>
+      </ul>
+      <h3 class="features__bonus-h">Cогласовав стоимость и сроки доставки<br>мы доставим ваш груз "под ключ"</h3>
+      <ul class="features__bonus-list">
+        <li class="features__bonus-li">
+          <div class="big-num">01.</div>
+          <div class="features__bonus-text">Произведем<br> оплату поставщику<br> за товар</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">02.</div>
+          <div class="features__bonus-text">Cамостоятельно<br>заберем груз с<br>фабрики/завода</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">03.</div>
+          <div class="features__bonus-text">Осуществим<br>экспортное<br>оформление</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">04.</div>
+          <div class="features__bonus-text">Получим<br>разрешительные<br>документы</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">05.</div>
+          <div class="features__bonus-text">Проведем<br>таможенное<br>оформление</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">06.</div>
+          <div class="features__bonus-text">Доставим<br>по России<br>&nbsp;</div>
+        </li>
+        <li class="features__bonus-li">
+          <div class="big-num">07.</div>
+          <div class="features__bonus-text">Доставим<br>на склад<br>клиента</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block block-consultation">
+    <div class="container">
+      <h2><span>GARANT Logistic предоставляет</span> надежные решения для вашего бизнеса</h2>
+      <div class="info-box-wrapper">
+        <div class="conts1">
+          <div class="block-consultation__info-box block-consultation__info-box_1">
+            <div class="block-consultation__box-cost">
+              <div class="consultation-popup hidden" id="block-5" data-popup-window="5">
+                <form action="application.php" method="POST" name=" application " id="application2" data-order="order-5">
+                  <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                  <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
+                  <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                  <label class="label_to" style="display: none">Бесплатная консультация</label>
+                  <div class="pop-input-wrapper">
+                    <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                    <input name="telephone" required="" type="Tel" id="applicationTelephone" class="form-input popup mask-phone" placeholder="Телефон:">
+                    <input name="from" type="hidden" value="Авиа">
+                  </div>
+                  <button id="f3" class="button consultation-btn" type="submit" form="application2">Заказать</button>
+                  <label id="polit3" class="box-change"><input type="checkbox" id="polit33"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+                  <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+                </form>
+              </div>
+              <h3>Авиа</h3>
+              <div class="consultation-box-variant">
+                <div class="block-consultation__way">3-5 дней</div>
+                <div class="block-consultation__way">от 200кг</div>
+                <div class="block-consultation__variant">- контейнерные перевозки</div>
+                <div class="block-consultation__variant">- сборные грузы</div>
+                <div class="block-consultation__variant">- авиа перевозки</div>
+                <div class="block-consultation__variant">- морские перевозки</div>
+                <div class="block-consultation__variant">- авто перевозки</div>
+                <div class="block-consultation__variant">- Ж/Д перевозки</div>
+              </div>
+              <button href="#" class="button consultation-btn  margin" data-popup="block-5">Заказать</button>
+            </div>
+          </div>
+
+          <div class="block-consultation__info-box block-consultation__info-box_2">
+            <div class="block-consultation__box-cost">
+              <div class="consultation-popup hidden" id="block-1" data-popup-window="1">
+                <form id="application5" action="application.php" method="POST" name=" application5 " data-order="order-1">
+                  <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                  <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
+                  <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                  <label class="label_to" style="display: none">Бесплатная консультация</label>
+                  <div class="pop-input-wrapper">
+                    <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                    <input name="telephone" type="Tel" id="applicationTelephone" vphone='true' class="form-input popup mask-phone" placeholder="Телефон:">
+                    <input name="from" type="hidden" value="Авто + Авиа">
+                  </div>
+                  <button id="f3" class="button consultation-btn applicationButton" type="submit" form="application5">Заказать</button>
+                  <label id="polit3" class="box-change"><input type="checkbox" id="polit33"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+                  <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+                </form>
+              </div>
+
+              <h3>Авто + Авиа</h3>
+              <div class="consultation-box-variant">
+                <div class="block-consultation__way">10-14 дней</div>
+                <div class="block-consultation__way">от 50кг</div>
+                <div class="block-consultation__variant">- контейнерные перевозки</div>
+                <div class="block-consultation__variant">- сборные грузы</div>
+                <div class="block-consultation__variant">- авиа перевозки</div>
+                <div class="block-consultation__variant">- морские перевозки</div>
+                <div class="block-consultation__variant">- авто перевозки</div>
+                <div class="block-consultation__variant">- Ж/Д перевозки</div>
+              </div>
+              <button href="#" class="button consultation-btn  margin" data-popup="block-1">Заказать</button>
+            </div>
+          </div>
+
+          <div class="block-consultation__info-box block-consultation__info-box_3">
+            <div class="block-consultation__box-cost">
+              <div class="consultation-popup hidden" id="block-4" data-popup-window="4">
+                <form id="application8" action="application.php" method="POST" name=" application8 " data-order="order-4">
+                  <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                  <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
+                  <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                  <label class="label_to" style="display: none">Бесплатная консультация</label>
+                  <div class="pop-input-wrapper">
+                    <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                    <input name="telephone" type="Tel" id="applicationTelephone" class="form-input popup mask-phone" placeholder="Телефон:">
+                    <input name="from" type="hidden" value="Море + Ж/Д">
+                  </div>
+                  <button id="f3" class="button consultation-btn applicationButton" type="submit" form="application8">Заказать</button>
+                  <label id="polit3" class="box-change"><input type="checkbox" id="polit33"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+                  <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+                </form>
+              </div>
+
+              <h3>Море + Ж/Д</h3>
+              <div class="consultation-box-variant">
+                <div class="block-consultation__way">21-25 дней</div>
+                <div class="block-consultation__way">от 50кг</div>
+                <div class="block-consultation__variant">- контейнерные перевозки</div>
+                <div class="block-consultation__variant">- сборные грузы</div>
+                <div class="block-consultation__variant">- авиа перевозки</div>
+                <div class="block-consultation__variant">- морские перевозки</div>
+                <div class="block-consultation__variant">- авто перевозки</div>
+                <div class="block-consultation__variant">- Ж/Д перевозки</div>
+              </div>
+              <button href="#" class="button consultation-btn  margin" data-popup="block-4">Заказать</button>
+            </div>
+          </div>
+          <div class="block-consultation__info-box block-consultation__info-box_4">
+            <div class="block-consultation__box-cost">
+              <div class="consultation-popup hidden" id="block-6" data-popup-window="6">
+                <form id="application9" action="application.php" method="POST" name=" application9 " data-order="order-6">
+                  <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                  <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
+                  <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                  <label class="label_to" style="display: none">Бесплатная консультация</label>
+                  <div class="pop-input-wrapper">
+                    <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                    <input name="telephone" type="Tel" id="applicationTelephone" class="form-input popup mask-phone" placeholder="Телефон:">
+                    <input name="from" type="hidden" value="Море + Ж/Д">
+                  </div>
+                  <button id="f3" class="button consultation-btn applicationButton" type="submit" form="application9">Заказать</button>
+                  <label id="polit3" class="box-change"><input type="checkbox" id="polit33"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+                  <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+                </form>
+              </div>
+              <h3>Море + Ж/Д</h3>
+              <div class="consultation-box-variant">
+                <div class="block-consultation__way">35-40 дней</div>
+                <div class="block-consultation__way">от 50кг</div>
+                <div class="block-consultation__variant">- контейнерные перевозки</div>
+                <div class="block-consultation__variant">- сборные грузы</div>
+                <div class="block-consultation__variant">- авиа перевозки</div>
+                <div class="block-consultation__variant">- морские перевозки</div>
+                <div class="block-consultation__variant">- авто перевозки</div>
+                <div class="block-consultation__variant">- Ж/Д перевозки</div>
+              </div>
+              <button href="#" class="button consultation-btn  margin" data-popup="block-6">Заказать</button>
+            </div>
+          </div>
+          <div class="block-consultation__info-box block-consultation__info-box_5">
+            <div class="block-consultation__box-cost">
+              <div class="consultation-popup hidden" id="block-9" data-popup-window="9">
+                <form id="application10" action="application.php" method="POST" name=" application10 " data-order="order-9">
+                  <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
+                  <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
+                  <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                  <label class="label_to" style="display: none">Бесплатная консультация</label>
+                  <div class="pop-input-wrapper">
+                    <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
+                    <input name="telephone" type="Tel" id="applicationTelephone" class="form-input popup mask-phone" placeholder="Телефон:">
+                    <input name="from" type="hidden" value="Море + Авто">
+                  </div>
+                  <button id="f3" class="button consultation-btn applicationButton" type="submit" form="application10">Заказать</button>
+                  <label id="polit3" class="box-change"><input type="checkbox" id="polit33"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+                  <span class="popup-hint text-change">Ваши данные никогда не<br>будут переданы 3-им лицам</span>
+                </form>
+              </div>
+              <h3>Море + Авто</h3>
+              <div class="consultation-box-variant">
+                <div class="block-consultation__way">45-55 дней</div>
+                <div class="block-consultation__way">контейнер</div>
+                <div class="block-consultation__variant">- контейнерные перевозки</div>
+                <div class="block-consultation__variant">- сборные грузы</div>
+                <div class="block-consultation__variant">- авиа перевозки</div>
+                <div class="block-consultation__variant">- морские перевозки</div>
+                <div class="block-consultation__variant">- авто перевозки</div>
+                <div class="block-consultation__variant">- Ж/Д перевозки</div>
+              </div>
+              <button href="#" class="button consultation-btn  margin" data-popup="block-9">Заказать</button>
+            </div>
+          </div>
+          <div class="block-consultation__features">Доставка грузов из Китая под ключ происходит по десяткам направлений. От выбора пути зависит стоимость и сроки доставки вашего груза.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-profit">
+    <div class="container">
+      <h2>Что вы получаете сотрудничая с <span class="block-profit__highlighted">GARANT Logistic?</span></h2>
+      <div class="list-wrapper">
+        <ul class="profit-list">
+          <li class="profit-li">
+            <div class="profit-info">Наличный/безналичный расчет</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Неизменную стоимость ставки</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Рассрочка платежа до момента доставки груза в конечный адрес</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Всегда на связи</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Самостоятельно заберём груз от разных поставщиков</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Полное документальное сопровождение, страхование и растаможку грузов</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Мониторинг и охрану груза на всём пути следования от поставщика до склада клиента</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">100% гарантии сохранности и доставки груза в оговоренные сроки</div>
+          </li>
+          <li class="profit-li">
+            <div class="profit-info">Производим взаиморасчеты с поставщиками при отсутствии валютного счета</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="profit-sub">
+      <div class="container">
+        <h3 class="profit-sub__header">Вы ничем не рискуете</h3>
+        <div class="profit-sub-first-col">
+          <ul class="no-risk-list">
+            <li class="no-risk-li">Мы никогда не допускаем ошибок в определении кодов ТНВЭД</li>
+            <li class="no-risk-li">Никаких скрытых платежей и изменений стоимости. При возникновении дополнительных расходов мы берем их на себя</li>
+            <li class="no-risk-li">В случае непредвиденных ситуаций мы всегда найдем решение и возьмем все риски на себя</li>
+          </ul>
+        </div>
+        <div class="profit-sub-second-col">
+          <h3>Вместе с грузом вы получаете:</h3>
+          <ul class="profit-bonus-list">
+            <li class="profit-bonus-li">
+              <div class="profit-bonus-inf">Договор</div>
+            </li>
+            <li class="profit-bonus-li">
+              <div class="profit-bonus-inf">Счет фактура с НДС</div>
+            </li>
+            <li class="profit-bonus-li">
+              <div class="profit-bonus-inf">Номер таможенной декларации</div>
+            </li>
+            <li class="profit-bonus-li">
+              <div class="profit-bonus-inf">Товарная накладная ТОРГ-12</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-contacts">
+    <div class="block-contacts__header">
+      <div class="container">
+        <div class="block-contacts__header-left">
+          <div class="control">Контролируйте затраты и увеличивайте прибыль вашего бизнеса.</div>
+          <div class="control-com">Рассчитайте стоимость доставки сборного груза и получите услугу таможенного оформления <span>бесплатно</span>
+          </div>
+        </div>
+        <div class="block-contacts__header-right">
+          <div class="btn-box">
+            <a href="#raschet" class="applicationButton" type="submit" form="application" id="buttobottom" class="button cost-btn">Рассчитать стоимость</a>
+            <div class="btn-hint">Чтобы узнать стоимость доставки, заполните форму. Мы перезвоним вам в течении 30 секунд (для уточнения параметров), расчет отправим в течении 1 дня</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-contacts-mid">
+      <div class="container">
+        <div class="consultations">
+          <div class="question">остались вопросы?</div>
+          <p>Получите бесплатную консультацию менеджера</p>
+        </div>
+        <div class="block-contacts-mid__form-container">
+          <form id="application13" action="application.php" method="POST" name=" application13 " class="second-form" data-order="order-4">
+            <p class="label_sndok label_indent" style="display: none; margin-top: 30px; font-size: 16px;color: #000;">
+              Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время
+            </p>
+            <label class="label_to" style="display: none">Остались вопросы</label>
+            <div class="second-form-h text-change">заполните форму</div>
+            <div class="inf text-change">и наш специалист в течении часа перезвонит вам</div>
+            <input name="name" required="" id="applicationName" type="text" class="form-input" placeholder="Имя:">
+            <input name="telephone" required="" type="Tel" id="applicationTelephone" class="form-input mask-phone" placeholder="Телефон:">
+            <input name="from" type="hidden" value="Получить консультацию">
+            <label id="polit2" class="box-change"><input type="checkbox" id="polit22"> Согласен с политикой конфиденциальности и на обработку персональных данных</label>
+            <span class="hint text-change">Ваши данные никогда не будут переданы 3-им лицам</span>
+            <button class="applicationButton button form-btn" type="submit" form="application13" id="cons" data-submit-form="form-get-info">получить консультацию</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container yamap-contacts">
+      <div class="yamap-contacts__contacts">
+        <p>Гарант Лоджистик</p>
+        <p>690065, г. Владивосток, ул. Стрельникова, д.7 оф. 501</p>
+        <p>Тел.: <a href="tel:+74232060482">8 (423) 206-04-82</a></p>
+        <p>Бесплатно по Росси: <a href="tel:+78005119912">8 800 511 99 12</a></p>
+        <p>E-mail: <a href="mailto:sales@garant-logistic.ru">sales@garant-logistic.ru</a></p>
+      </div>
+    </div>
+    <div class="block-contacts__yamap" id="yamap"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="src/jquery.maskedinput.min.js"></script>
+
+  <script src="src/main.js"></script>
+  <!--script src="ap_s/mform.js"></script-->
+  <!--script src="https://callback.onlinepbx.ru/loader.js" charset="UTF-8" data-onpbxcb-id="56608536dd75d8e8143e7acd4a29fc00"></script-->
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</body>
+
+</html>

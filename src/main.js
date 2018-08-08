@@ -65,42 +65,55 @@ $(document).ready(function () {
   });
 
   /* Yandex maps */
-  var myMap;
+//  var myMap;
   
   // Дождёмся загрузки API и готовности DOM.
-  ymaps.ready(init);
-
-  function init() {
+//  ymaps.ready(init);
+//
+//  function init() {
 
     //    var myPlacemark;
-    myMap = new ymaps.Map(
-      'yamap', {
-        center: [43.0975, 131.8650],
-        zoom: 16,
-        scroll: false
-      }
-    );
-
-    var myPlacemark = new ymaps.Placemark([43.0975, 131.8650], {
-      iconCaption: 'улица Стрельникова, 7',
-      iconLayout: 'default#image',
-      iconImageHref: '/img/icon-map-pointer.png',
-      iconImageSize: [39, 40],
-      iconImageOffset: [-20, -20],
-      hideIconOnBalloonOpen: false,
-    });
+//    myMap = new ymaps.Map(
+//      'yamap', {
+//        center: [43.0975, 131.8650],
+//        zoom: 16,
+//        scroll: false
+//      }
+//    );
+//
+//    var myPlacemark = new ymaps.Placemark([43.0975, 131.8650], {
+//      iconCaption: 'улица Стрельникова, 7',
+//      iconLayout: 'default#image',
+//      iconImageHref: '/img/icon-map-pointer.png',
+//      iconImageSize: [39, 40],
+//      iconImageOffset: [-20, -20],
+//      hideIconOnBalloonOpen: false,
+//    });
     
     /* убрать поле поиска на карте */
-    myMap.controls.remove('searchControl');
-
-    myMap.events.add('click', function () {
-      myMap.balloon.close();
-    });
-
-    myMap.behaviors.disable('scrollZoom');
-    myMap.geoObjects.add(myPlacemark);
-  }
-
-  
+//    myMap.controls.remove('searchControl');
+//
+//    myMap.events.add('click', function () {
+//      myMap.balloon.close();
+//    });
+//
+//    myMap.behaviors.disable('scrollZoom');
+//    myMap.geoObjects.add(myPlacemark);
+//  }  
   /* end Yandex maps */
+  
+  $('.block-maps__map #mapDiv').hide();
+  
+  $('.block-maps__nav-item').click(function() {
+    if(!$(this).hasClass('active')) {
+      $('.block-maps__nav-item.active').removeClass("active");  
+      $(this).addClass('active');
+      var targetCityMap = $(this).attr('data-city');
+//      console.log(targetCityMap);
+      $('.block-maps__map.active').removeClass('active');
+      $(targetCityMap).addClass('active');
+      $(targetCityMap).show(1500);
+      
+    } 
+  });
 });

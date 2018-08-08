@@ -233,6 +233,7 @@ div {
 
 #header{
   background: url("../img/bg-header_truck.jpg") no-repeat 0 0;
+  background: url("../img/bg-header.png") center top no-repeat;
   height: 720px;
   position: relative;
 }
@@ -256,13 +257,15 @@ div {
 }
 
 #header .logo {
-  background: url("../img/bg-header-logo.png") no-repeat 0 0;
+  background: url(../img/bg-header-logo.png) no-repeat right top;
   display: block;
   height: 51px;
   padding-left: 326px;
   position: relative;
   top: 6px;
   width: 1040px;
+  width: calc(100% - 860px);
+  padding-left: calc(100% - 1576px);
 }
 
 .logo__slogan {
@@ -313,7 +316,7 @@ div {
 
 #header .number .other-num {
   color: #ffffff;
-  font-family: "Lato";  
+  font-family: "LatoRegular";
   font-size: 33px;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -1026,44 +1029,73 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
 }
 
 .block-consultation .info-box-wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-top: 23px;
   padding-top: 0px;
 }
 
 .block-consultation__box-cost {
   border: 3px solid #c2c2c2;
-  height: auto;
+  height: 375px;
   padding-bottom: 30px;
-  width: 250px;
+  width: 175px;
 }
 
 .block-consultation .info-box-wrapper .block-consultation__info-box {  
   display: inline-block;
   padding-top: 80px;
-  position: relative;
-  background-position: center 13px;
+  position: relative;  
   background-repeat: no-repeat;
 }
 
 .block-consultation .info-box-wrapper .block-consultation__info-box_1 {  
-  background-image: url(/src/img/icon-transport_avia.png);
-  background-position: center top;
+  background-image: url(/src/img/svg/icon-blank.svg);
+  background-position: center 13px;
+  -webkit-background-size: 53px;
+  background-size: 49px;
 }
 
 .block-consultation__info-box_2 {
-  background-image: url(/src/img/icon-transport_caravia.png);  
+  background-image: url(/src/img/svg/icon-container.svg);  
+  -webkit-background-size: 47px;
+  background-size: 47px;
+  background-position: center 10px;
 }
 
 .block-consultation__info-box_3 {
-  background-image: url(/src/img/icon-transport_seatra.png);  
+  background-image: url(/src/img/icon-carry-car.png);  
+  background-position: center 16px;
+  -webkit-background-size: 52px;
+  background-size: 52px;
 }
 
 .block-consultation__info-box_4 {
-  background-image: url(/src/img/icon-transport_seatra.png);  
+  background-image: url(/src/img/svg/icon-avia.svg);
+  background-position: center 16px;
+  -webkit-background-size: 86px;
+  background-size: 86px;
 }
 
 .block-consultation__info-box_5 {
-  background-image: url(/src/img/icon-transport_seacar.png);  
+  background-image: url(/src/img/svg/icon-ship.svg);  
+  background-position: center 17px;
+  -webkit-background-size: 49px;
+  background-size: 49px;
+}
+
+.block-consultation__info-box_6 {
+  background-image: url(/src/img/svg/icon-truck.svg);  
+  background-position: center 17px;
+  -webkit-background-size: 49px;
+  background-size: 49px;
+}
+
+.block-consultation__info-box_7 {
+  background-image: url(/src/img/svg/icon-train.svg);  
+  background-position: center 17px;
+  -webkit-background-size: 38px;
+  background-size: 38px;
 }
 
 .block-consultation__info-box h3 {
@@ -1071,13 +1103,21 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   display: block;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 23px;
+  height: 44px;
+  margin-bottom: 26px;
   margin-top: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.block-consultation__way {
+.block-consultation__info-box p {  
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 7px;
+  text-align: center;
+}
+
+/*.block-consultation__way {
   display: block;
   font-size: 18px;
   line-height: 1.2;
@@ -1092,6 +1132,12 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}*/
+
+.block-consultation .consultation-btn {
+  bottom: 35px;
+  left: 32px;
+  position: absolute;
 }
 
 .block-profit {
@@ -1483,6 +1529,44 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   text-decoration: none;
 }
 
+.block-maps {
+	
+}
+
+.block-maps__nav {
+  height: 97px;
+  text-align: center;
+}
+
+.block-maps__nav-item {
+  cursor: pointer;
+	display: inline-block;
+  color: #000000;
+  font-size: 24px;
+  height: 97px;  
+  line-height: 97px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.block-maps__nav-item.active {
+  background-color: #dcdcdc;
+}
+
+.block-maps__map {
+  display: none;
+  position: relative;
+}
+
+.block-maps__map.active {
+  display: block;
+  z-index: 99;
+}
+
+.block-maps__map #mapDiv {
+  display: none !important;
+}
+
 #yamap {
   height: 420px;
   width: 100%;
@@ -1490,10 +1574,11 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
 
 .yamap-contacts {
   position: relative;
+  position: initial;
   z-index: 9999;
 }
 
-.yamap-contacts__contacts {
+.block-maps__contacts {
   background-color: #ffffff;
   border: 2px solid #2b94c6;
   bottom: -164px;
@@ -1501,14 +1586,16 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   font-size: 18px;
   height: 164px;
   left: calc(50% - 675px);
+  left: 9px;
   line-height: 24px;
   padding-top: 22px;
   position: absolute;
   text-align: center;
+  top: 9px;
   width: 490px;
 }
 
-.yamap-contacts__contacts p {
+.block-maps__contacts p {
   margin: 0;
 }
 
@@ -1526,39 +1613,16 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
 }
 
 .block-countries__country-name {
+  bottom: 6px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  padding-top: 95px;
+  left: 3px;
   line-height: 1;
-  margin-bottom: 27px;
+  margin-bottom: 0;
+  padding-top: 95px;
+  position: absolute;
 }
-
-/*.block-countries__timeframe,
-.block-countries__weight {
-  -webkit-background-size: 30px;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  height: 32px;
-  line-height: 32px;
-  margin-bottom: 13px;
-  padding-left: 40px;
-  padding-top: 3px;
-}
-
-.block-countries__timeframe span,
-.block-countries__weight span {
-  font-weight: 700;
-}
-
-.block-countries__weight {
-  background-image: url(/src/img/icon-weight.svg);
-}
-
-.block-countries__timeframe {
-  background-image: url(/src/img/icon-time.svg);
-}*/
 
 .block-countries__country {
   background-color: #ffffff;

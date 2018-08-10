@@ -6,7 +6,8 @@
   <title>Garant Global Logistic</title>
   <link rel="stylesheet" href="/src/styles/bootstrap.min.css">
   <link rel="stylesheet" href="/src/styles/main.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--link rel="shortcut icon" type="image/x-icon" href="favicon.ico"-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
   <!--<meta name="viewport" content="width=1300, initial-scale=1.0">-->
 
@@ -17,8 +18,10 @@
 <body>
   <header class="header" id="header">
     <div class="logo">
-      <div class="img-wrapper logo__img"><img src="/src/img/logo-header.png" alt="logo"></div>
-      <p class="logo__slogan">Логистический оператор и&nbsp;таможенный брокер в одном лице</p>
+      <div class="container">
+        <div class="img-wrapper logo__img"><img src="/src/img/logo-header.png" alt="logo"></div>
+        <p class="logo__slogan">Логистический оператор и&nbsp;таможенный брокер в одном лице</p>
+      </div>
     </div>
     <div class="container">
       <div class="header-right">
@@ -27,10 +30,10 @@
             <a href="tel:+78005119912" class="other-num">8 800 511 99 12</a>
             <a href="#" class="call-btn" data-popup="recall">Звонок по России<span class="text-upper">бесплатный</span></a>
             <div class="call-buttom-popup hidden" id="recall" data-popup-window="1">
-              <form data-order="order-1" id="application" action="application.php" method="POST" name=" application ">
+              <form data-order="order-1" id="application" action="application.php" method="POST" name="application" onsubmit="yaCounter23933029.reachGoal('form-callback'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
                 <div class="pop-inf text-change">и мы перезвоним Вам</div>
-                <p class="label_sndok label-change" style="display: none">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <p class="label_sndok label-change" style="display: none">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <div class="pop-input-wrapper">
                   <button class="label_to" style="display: none">ЗАКАЗАТЬ ЗВОНОК</button>
                   <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -67,7 +70,7 @@
           Не задаем лишних вопросов<br><span class="text-highlighted">только по существу</span>
         </div>
         <div class="block-advantages-info block-advantages-info_timer">
-          Перезвоним в течении<br><span class="text-highlighted">30 секунд</span> (в рабочее время)
+          Перезвоним в течение<br><span class="text-highlighted">30 секунд</span> (в рабочее время)
         </div>
 
         <div class="block-advantages-info block-advantages-info_cargo">
@@ -75,10 +78,10 @@
         </div>
       </div>
       <div class="form-container">
-        <form id="form-cost" class="registration-form" method="post">
-          <p class="label_sndok" style="display: none; margin-top: 300px">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+        <form id="form-cost" class="registration-form" method="post" onsubmit="yaCounter23933029.reachGoal('form-getcost'); return true;">
+          <p class="label_sndok" style="display: none; margin-top: 300px">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
           <div class="text-header form-header text-change">ОСТАВЬТЕ ЗАЯВКУ</div>
-          <div class="form-hint text-change">на бесплатный расчет стоимости и в течении 1 дня <br> узнайте сколько вы сэкономите, поручив нам <br> доставку вашего груза</div>
+          <div class="form-hint text-change">на бесплатный расчет стоимости и в течение 1 дня <br> узнайте сколько вы сэкономите, поручив нам <br> доставку вашего груза</div>
           <input name="name" required="" id="applicationName" placeholder="Введите ваше имя" type="text" class="form-input">
           <input name="phone" type="Tel" id="applicationTelephone" placeholder="Введите ваш телефон" type="tel" class="form-input mask-phone">
           <input name="email" id="applicationEmail" placeholder="Введите ваш е-маил" type="email" class="form-input">
@@ -137,8 +140,8 @@
       <h2 class="features-header">Как мы работаем над <span class="text-highlighted">ВАШИМ ЗАКАЗОМ?</span></h2>
 
       <div class="info-block-wrapper">
-        <div class="features-info features-info_phone">Мы перезвоним вам в&nbsp;течении <span class="text-accent">30 секунд</span> для уточнения параметров</div>
-        <div class="features-info features-info_email">В течении <span class="text-accent">1 дня</span> мы произведём расчет и вышлем на указанную вами электронную почту Коммерческое Предложение </div>
+        <div class="features-info features-info_phone">Мы перезвоним вам в&nbsp;течение <span class="text-accent">30 секунд</span> для уточнения параметров</div>
+        <div class="features-info features-info_email">В течение <span class="text-accent">1 дня</span> мы произведём расчет и вышлем на указанную вами электронную почту Коммерческое Предложение </div>
       </div>
       <div class="info-border">В коммерческое предложение включены:</div>
       <ul class="features-lists">
@@ -189,10 +192,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_1">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-1" data-popup-window="1">
-              <form action="application.php" method="POST" name=" application " id="application2" data-order="order-1">
+              <form action="application.php" method="POST" name="application" id="application2" data-order="order-1"  onsubmit="yaCounter23933029.reachGoal('form-service-customs'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -216,10 +219,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_2">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-2" data-popup-window="2">
-              <form action="application.php" method="POST" name=" application " id="application2" data-order="order-2">
+              <form action="application.php" method="POST" name="application" id="application2" data-order="order-2"  onsubmit="yaCounter23933029.reachGoal('form-service-container'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -244,10 +247,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_3">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-3" data-popup-window="3">
-              <form action="application.php" method="POST" name=" application " id="application2" data-order="order-3">
+              <form action="application.php" method="POST" name="application" id="application2" data-order="order-3" onsubmit="yaCounter23933029.reachGoal('form-service-cargo'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" required="" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -272,10 +275,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_4">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-4" data-popup-window="4">
-              <form id="application5" action="application.php" method="POST" name=" application5 " data-order="order-4">
+              <form id="application5" action="application.php" method="POST" name=" application5 " data-order="order-4" onsubmit="yaCounter23933029.reachGoal('form-service-aviation'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -300,10 +303,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_5">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-5" data-popup-window="5">
-              <form id="application8" action="application.php" method="POST" name=" application8 " data-order="order-5">
+              <form id="application8" action="application.php" method="POST" name=" application8 " data-order="order-5" onsubmit="yaCounter23933029.reachGoal('form-service-sea'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -328,10 +331,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_6">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-6" data-popup-window="6">
-              <form id="application6" action="application.php" method="POST" name="application6" data-order="order-6">
+              <form id="application6" action="application.php" method="POST" name="application6" data-order="order-6" onsubmit="yaCounter23933029.reachGoal('form-service-road'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -355,10 +358,10 @@
         <div class="block-consultation__info-box block-consultation__info-box_7">
           <div class="block-consultation__box-cost">
             <div class="consultation-popup hidden" id="block-7" data-popup-window="7">
-              <form id="application7" action="application.php" method="POST" name="application7" data-order="order-7">
+              <form id="application7" action="application.php" method="POST" name="application7" data-order="order-7" onsubmit="yaCounter23933029.reachGoal('form-service-railway'); return true;">
                 <div class="btm-pop-h text-change">ЗАПОЛНИТЕ ФОРМУ</div>
-                <div class="pop-inf text-change">и наш специалист в течении часа перезвонит Вам</div>
-                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время</p>
+                <div class="pop-inf text-change">и наш специалист в течение часа перезвонит Вам</div>
+                <p class="label_sndok" style="display: none; margin-top: 60px; font-size: 14px;">Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время</p>
                 <label class="label_to" style="display: none">Бесплатная консультация</label>
                 <div class="pop-input-wrapper">
                   <input name="name" id="applicationName" type="text" class="form-input popup" placeholder="Имя:">
@@ -459,7 +462,7 @@
         <div class="block-contacts__header-right">
           <div class="btn-box">
             <a href="#raschet" class="applicationButton" type="submit" form="application" id="buttobottom" class="button cost-btn">Рассчитать стоимость</a>
-            <div class="btn-hint">Чтобы узнать стоимость доставки, заполните форму. Мы перезвоним вам в течении 30 секунд (для уточнения параметров), расчет отправим в течении 1 дня</div>
+            <div class="btn-hint">Чтобы узнать стоимость доставки, заполните форму. Мы перезвоним вам в течение 30 секунд (для уточнения параметров), расчет отправим в течение 1 дня</div>
           </div>
         </div>
       </div>
@@ -471,13 +474,13 @@
           <p>Получите бесплатную консультацию менеджера</p>
         </div>
         <div class="block-contacts-mid__form-container">
-          <form id="application13" action="application.php" method="POST" name=" application13 " class="second-form" data-order="order-4">
+          <form id="application13" action="application.php" method="POST" name="application13" class="second-form" data-order="order-4" onsubmit="yaCounter23933029.reachGoal('form-freeconsult'); return true;">
             <p class="label_sndok label_indent" style="display: none; margin-top: 30px; font-size: 16px;color: #000;">
-              Ваша заявка отправлена и взята в обработку.<br /> Мы свяжемся с вами в ближайшее время
+              Ваша заявка отправлена и взята в обработку.<br> Мы свяжемся с вами в ближайшее время
             </p>
             <label class="label_to" style="display: none">Остались вопросы</label>
             <div class="second-form-h text-change">заполните форму</div>
-            <div class="inf text-change">и наш специалист в течении часа перезвонит вам</div>
+            <div class="inf text-change">и наш специалист в течение часа перезвонит вам</div>
             <input name="name" required="" id="applicationName" type="text" class="form-input" placeholder="Имя:">
             <input name="telephone" required="" type="Tel" id="applicationTelephone" class="form-input mask-phone" placeholder="Телефон:">
             <input name="from" type="hidden" value="Получить консультацию">
@@ -492,11 +495,11 @@
   <div class="block-maps">
     <div class="container block-maps__nav">
       <div data-city="#map-vladivostok" class="block-maps__nav-item active">Владивосток</div>
-      <div data-city="#map-moscow" class="block-maps__nav-item">Москва</div>      
+      <div data-city="#map-moscow" class="block-maps__nav-item">Москва</div>
       <div data-city="#map-shanghai" class="block-maps__nav-item">Шанхай</div>
       <div data-city="#map-guangzhou" class="block-maps__nav-item">Гуанчжоу</div>
       <div data-city="#map-ningbo" class="block-maps__nav-item">Нингбо</div>
-    </div>   
+    </div>
     <div id="map-vladivostok" class="block-maps__map active">
       <div class="yamap-contacts">
         <div class="block-maps__contacts">
@@ -524,7 +527,7 @@
 
     <div id="map-shanghai" class="block-maps__map">
       <div class="yamap-contacts">
-        <div class="block-maps__contacts">
+        <div class="block-maps__contacts block-maps__contacts_higher">
           <p>Garant Global Logistic LTD | Shanghai branch</p>
           <p>Shanghai Shi, Yangpu Qu, WuJiaoChang Guo Quan Lu, 43, office 1112-1114</p>
           <p>Operation Department: +86 (021) 3101 6774</p>
@@ -537,20 +540,20 @@
 
     <div id="map-guangzhou" class="block-maps__map">
       <div class="yamap-contacts">
-        <div class="block-maps__contacts">
+        <div class="block-maps__contacts block-maps__contacts_higher">
           <p>Garant Global Logistic LTD | Guangzhou branch</p>
           <p>167 Linhe W Rd, Tianhe Qu, Guangzhou Shi, Guangdong Sheng, China, office 2941/2942</p>
           <p>Operation Department: +86 (020) 8516 5523</p>
           <p>Client service: 8 (800) 555-61-38</p>
           <p>e-mail : china@miles-logistic.ru</p>
         </div>
-      </div>      
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.6372835398356!2d113.32334621434671!3d23.146929717478624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402fef065078a6b%3A0xc5199431237cce07!2sOffice!5e0!3m2!1sru!2sru!4v1511889274148" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <div id="map-ningbo" class="block-maps__map">
       <div class="yamap-contacts">
-        <div class="block-maps__contacts">
+        <div class="block-maps__contacts block-maps__contacts_higher">
           <p>Garant Global Logistic LTD | Ningbo branch</p>
           <p>ZhongNing Building, LingQiao Road, Haishu District, Ningbo, China, office 1901</p>
           <p>Operation Department: +86 (0) 574 8386 9765</p>

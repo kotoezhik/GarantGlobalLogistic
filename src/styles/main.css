@@ -122,7 +122,6 @@ input {
   width: 420px;
   padding-left: 10px;
   font-size: 12px;
-/*  font-family: "LatoRegular";*/
   border: 1px solid #7d7d7d;
 }
 
@@ -206,16 +205,13 @@ input[type="checkbox"] {
 
 a:hover,
 button:hover {
-/*  background: url("../img/btn-bg-hover.png") repeat-x;*/
   background-size: contain;
 }
 
 body {
-/*  font-family: "LatoRegular";*/
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: #000;
-/*  color: white;*/
   min-width: 1350px;
   max-width: 1920px;
   width: auto !important;
@@ -250,22 +246,11 @@ div {
   width: 100%;
 }
 
-@media screen and (max-width: 1500px) {
-  #header {
-    background-position: bottom center;
-  }
-}
-
 #header .logo {
-  background: url(../img/bg-header-logo.png) no-repeat right top;
   display: block;
   height: 51px;
-  padding-left: 326px;
   position: relative;
   top: 6px;
-  width: 1040px;
-  width: calc(100% - 860px);
-  padding-left: calc(100% - 1576px);
 }
 
 .logo__slogan {
@@ -343,10 +328,6 @@ div {
 
 #header .number .call-btn span {
   display: block;
-}
-
-#header .number .call-btn:hover {
-/*  background: url("../img/btn-bg-hover.png") repeat-x;*/
 }
 
 #header .number .call-buttom-popup {
@@ -500,11 +481,6 @@ div {
   padding-left: 67px;
   padding-top: 95px;
   width: 610px;
-}
-
-.block-advantages .left-block-position {
-/*  max-width: 590px;*/
-/*  float: right;*/
 }
 
 .block-advantages .block-advantages-h {
@@ -954,18 +930,17 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
 }
 
 .block-consultation .consultation-popup {
-  height: 448px;
-  /* min-width: 233px; */
-  /* width: 100%; */
-  display: inline-block;
   background: #ebebeb;
   border: solid 5px #b7b7b7;
-  padding-top: 80px;
-  position: absolute;
-  top: -10%;
-  left: -10px;
   color: black;
+  display: inline-block;
+  height: 448px;
+  left: -50%;
+  padding: 60px 10px 0;
+  position: absolute;
   text-align: center;
+  top: 0;
+  width: 300px;
   z-index: 998;
 }
 
@@ -1117,33 +1092,19 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   text-align: center;
 }
 
-/*.block-consultation__way {
-  display: block;
-  font-size: 18px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.block-consultation__way:nth-child(2) {
-  margin-bottom: 10px;
-}
-
-.block-consultation__variant {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-}*/
-
 .block-consultation .consultation-btn {
   bottom: 35px;
   left: 32px;
   position: absolute;
 }
 
+.block-consultation form .consultation-btn {
+  left: calc(50% - 116px/2);
+}
+
 .block-profit {
-  background: url("../img/profit-page-bg.png") no-repeat bottom center;
-  border-bottom: 5px solid #c60606;
-  background-size: cover;
+  background: url("/src/img/bg-profit.png") no-repeat center top;
+  border-bottom: 5px solid var(--color-theme);
   padding-top: 35px;
 }
 
@@ -1205,12 +1166,6 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   transform: translateY(-50%);
   vertical-align: top;
   width: 255px;
-}
-
-.block-profit .profit-sub {
-  background-image: url(/src/img/bg-profit-sub.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;  
 }
 
 .block-profit .profit-sub .container {
@@ -1584,15 +1539,19 @@ box-shadow: inset 0 0 5px rgba(224, 146, 46, 0.75);
   bottom: -164px;
   display: inline-block;
   font-size: 18px;
-  height: 164px;
+  height: 165px;
   left: calc(50% - 675px);
   left: 9px;
   line-height: 24px;
-  padding-top: 22px;
+  padding: 22px 10px 0;
   position: absolute;
   text-align: center;
   top: 9px;
   width: 490px;
+}
+
+.block-maps__contacts_higher {
+  height: 185px;
 }
 
 .block-maps__contacts p {
